@@ -1,0 +1,111 @@
+* {
+  background-color: rgb(121, 118, 126);
+  color: pink;
+  line-height: 1.5;
+}
+
+
+header, footer {
+  display: block;
+  min-height: 10vh;
+  text-align: center;
+}
+
+footer {
+  justify-content: center;
+  align-items: flex-end;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: inherit;
+}
+
+header p {
+  display: inline-block;
+  color: white;
+  width: 50%;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: inherit auto;
+  justify-content: space-evenly;
+  min-height: 80vh;
+}
+
+h2 {
+  font-size: 24px;
+  padding: 20px;
+  text-align: center;
+}
+
+article h2 {
+  border: solid white;
+  border-radius: 10px;
+  position: relative;
+  margin: -20px auto 20px;
+  padding: 10px;
+  width: 360px;
+  text-align: left;
+  box-shadow: inherit;
+}
+
+article p {
+  margin: inherit;
+}
+
+article {
+  border: dashed white;
+  position: inherit;
+  width: 400px;
+  margin: 20px;
+  display: space-around;
+  
+}
+
+code {
+  display: flex;
+  flex-direction: column;
+  margin: inherit;
+  background: linear-gradient(gray, pink);
+  height: auto;
+  border-radius: 20px;
+  padding: 30px 20px;
+  line-height: 1.5;
+  font-family: 'Courier New', Courier, monospace;
+  width: 350px;
+  user-select: all;
+  flex-grow: 1;
+}
+
+pre {
+  color: white;
+  display: inline;
+  background: transparent;
+  flex-grow: 1;
+}
+
+article:hover {
+  box-shadow: 0 0 5px 5px pink;
+}
+
+
+@media screen and (max-width: 992px) {
+  section{
+    width: 33%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section{
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  section{
+    width: 97%;
+  }
+}
